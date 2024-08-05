@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --color-principal: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --fuente-Montserrat: 'Montserrat', sans-serif;
+    --fuente-Krona: 'Krona One', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos generales para el cuerpo */
+body {
+    background-image: url('https://wallpapercave.com/wp/wp13977226.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Superposición para oscurecer el fondo */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Contenedor principal */
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+}
+
+/* Estilo para el texto */
+.text-white {
+    color: white;
+}
+
+/* Encabezado principal */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Párrafo principal */
+p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilos del carrusel */
+.carousel-item {
+    margin-bottom: 2rem; /* Añadimos margen inferior a cada item del carrusel */
+}
+
+.carousel-item img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-right:auto; /* Añadimos margen a la derecha de la imagen */
+}
+
+/* Estilo del botón de contacto */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.presentacion__contenido__texto {
+    font-size: 1.5rem;
+    font-family: var(--fuente-Montserrat);
+}
+
+.presentacion__contenido__titulo {
+    font-size: 3rem;
+    font-family: var(--fuente-Krona);
+    text-align: center;
+    color: var(--color-terciario); /* Cambia el color para hacerlo más llamativo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto para dar profundidad */
+    letter-spacing: 0.05em; /* Espaciado de letras */
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.footer {
+    background-color: #22D4FD;
+    padding: 1.5rem;
+    color: #000000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion {
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.carousel-item .row {
+    display: flex;
+    align-items: center;
+}
+
+
+.presentacion__enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulos{
+    font-family: var(--fuente-Krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.presentacion__enlaces__link {
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-family: var(--fuente-Montserrat);
+    border: 2px solid #22D4FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ffffff; /* Fondo blanco */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.presentacion__enlaces__link:hover {
+    background-color: #22D4FD; /* Fondo color cuando se hace hover */
+    color: #ffffff; /* Color de texto cuando se hace hover */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el efecto de elevación */
+}
